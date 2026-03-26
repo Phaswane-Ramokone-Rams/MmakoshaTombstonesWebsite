@@ -76,6 +76,28 @@ h6 {
   font-family: var(--heading-font);
 }
 
+
+/*-------pop up button-request quotation-*/
+.quotation-modal {
+  border-radius: 18px;
+  border: none;
+  padding: 10px;
+}
+
+.quotation-modal .modal-title {
+  font-weight: 700;
+}
+
+.quotation-modal .form-container h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.quotation-modal .form-container p {
+  margin-bottom: 20px;
+  color: #6c757d;
+}
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
@@ -733,6 +755,11 @@ section,
 .hero .hero-content .hero-buttons {
   display: flex;
   gap: 1.25rem;
+  flex-wrap: wrap; /* prevents overlap on small screens */
+}
+
+.hero .hero-content .primary-btn {
+  white-space: nowrap; /* keeps button text clean */
 }
 
 @media (max-width: 991px) {
